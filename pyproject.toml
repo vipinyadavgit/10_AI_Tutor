@@ -1,0 +1,21 @@
+[project]
+name = "10-ai-tutor"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "vipinyadavgit", email = "vipinyadav.git@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "openai>=2.24.0",
+    "python-dotenv>=1.2.1",
+    "streamlit>=1.63.0",
+]
+
+[project.scripts]
+10-ai-tutor = "10_ai_tutor:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
